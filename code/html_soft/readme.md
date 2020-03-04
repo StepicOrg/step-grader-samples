@@ -6,12 +6,12 @@
 
 Скопируйте во вкладку "Расширенный редактор"
 
-    def generate():
-        return []
-    
-    def tidy_up(code):
-        clean_code = code.replace(" ","").replace("\n","").replace("\r","").lower()
-        return clean_code
-    
-    def check(reply, clue):
-        return tidy_up(reply) == tidy_up(clue)
+def generate():
+    return []
+
+def tidy_up(code):
+    clean_code = code.replace(" ","").replace("\n","").replace("\r","").lower()
+    return clean_code
+
+def check(reply, clue):
+    return tidy_up(reply) == tidy_up(clue)
